@@ -1,5 +1,8 @@
-import 'dart:async';
+///TO VIEW THE PROJECT
+///FROND-END DESCRIPTION
+///GO TO lib/docs/Flutter_PHP_API_Project_Documentation.docx
 
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
