@@ -168,7 +168,8 @@ class ApiDevelopmentState extends State<ApiDevelopment>{
                                    if (value == null || value.isEmpty) {
                                      return "Please enter your email";
                                    }
-                                   if (!value.endsWith("@gmail.com")) {
+                                   final gmailRegex = RegExp(r"^[a-zA-Z0-9._%+-]+@gmail\.com$");
+                                   if (!gmailRegex.hasMatch(value)) {
                                      return "Enter a valid email";
                                    }
                                    return null;
